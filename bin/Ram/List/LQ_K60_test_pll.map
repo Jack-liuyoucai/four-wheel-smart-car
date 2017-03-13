@@ -1,0 +1,458 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.30.4.53288/W32 for ARM              03/May/2013  16:26:15 #
+# Copyright 2007-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\Users\Administrator\Desktop\起飞12\bin\Ram\Exe\LQ_K60 #
+#                    _test_pll.out                                            #
+#    Map file     =  C:\Users\Administrator\Desktop\起飞12\bin\Ram\List\LQ_K6 #
+#                    0_test_pll.map                                           #
+#    Command line =  C:\Users\Administrator\Desktop\起飞12\bin\Ram\Obj\LCDDri #
+#                    ver.o C:\Users\Administrator\Desktop\起飞12\bin\Ram\Obj\ #
+#                    common.o C:\Users\Administrator\Desktop\起飞12\bin\Ram\O #
+#                    bj\crt0.o C:\Users\Administrator\Desktop\起飞12\bin\Ram\ #
+#                    Obj\gpio.o C:\Users\Administrator\Desktop\起飞12\bin\Ram #
+#                    \Obj\isr.o C:\Users\Administrator\Desktop\起飞12\bin\Ram #
+#                    \Obj\light.o C:\Users\Administrator\Desktop\起飞12\bin\R #
+#                    am\Obj\main.o C:\Users\Administrator\Desktop\起飞12\bin\ #
+#                    Ram\Obj\start.o C:\Users\Administrator\Desktop\起飞12\bi #
+#                    n\Ram\Obj\sysinit.o C:\Users\Administrator\Desktop\起飞1 #
+#                    2\bin\Ram\Obj\uart.o C:\Users\Administrator\Desktop\起飞 #
+#                    12\bin\Ram\Obj\vectors.o C:\Users\Administrator\Desktop\ #
+#                    起飞12\bin\Ram\Obj\wdog.o --redirect                     #
+#                    _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o      #
+#                    C:\Users\Administrator\Desktop\起飞12\bin\Ram\Exe\LQ_K60 #
+#                    _test_pll.out --map C:\Users\Administrator\Desktop\起飞1 #
+#                    2\bin\Ram\List\LQ_K60_test_pll.map --config              #
+#                    C:\Users\Administrator\Desktop\起飞12\src\Project_Settin #
+#                    gs\Link\Ram.icf --semihosting --entry                    #
+#                    __iar_program_start --vfe                                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x1fff0000 { ro section .intvec };
+"A2":  place at 0x1fff0410 { ro section .noinit };
+"P1":  place in [from 0x1fff0000 to 0x20010000] { ro, block CodeRelocate };
+"P2":  place in [from 0x1fff0000 to 0x20010000] {
+          rw, block CodeRelocateRam, block CSTACK, block HEAP };
+
+  Section              Kind        Address    Size  Object
+  -------              ----        -------    ----  ------
+"A1":                                        0x410
+  .intvec              const    0x1fff0000   0x410  vectors.o [1]
+                              - 0x1fff0410   0x410
+
+"A2":                                         0x3c
+  .noinit              ro code  0x1fff0410    0x3c  crt0.o [1]
+                              - 0x1fff044c    0x3c
+
+"P1":                                       0x3d84
+  .text                ro code  0x1fff044c  0x2bc0  main.o [1]
+  .text                ro code  0x1fff300c   0x640  LCDDriver.o [1]
+  .text                ro code  0x1fff364c    0x32  I32ToFlt.o [4]
+  .text                ro code  0x1fff367e    0x22  zero_init3.o [5]
+  .text                ro code  0x1fff36a0    0xb4  common.o [1]
+  .text                ro code  0x1fff3754    0x1c  I32ToDbl.o [4]
+  .text                ro code  0x1fff3770   0x246  DblDiv.o [4]
+  .text                ro code  0x1fff39b6     0x2  vectors.o [1]
+  .text                ro code  0x1fff39b8    0x4c  DblToI32.o [4]
+  .text                ro code  0x1fff3a04    0x24  FltCmpLe.o [4]
+  .text                ro code  0x1fff3a28    0x44  FltToS32.o [4]
+  .text                ro code  0x1fff3a6c    0xe6  FltSub.o [4]
+  .text                ro code  0x1fff3b54    0x24  FltCmpGe.o [4]
+  .text                ro code  0x1fff3b78    0xd8  FltMul.o [4]
+  .text                ro code  0x1fff3c50    0x74  FltAdd.o [4]
+  .rodata              const    0x1fff3cc4   0x228  LCDDriver.o [1]
+  .data_init                    0x1fff3eec    0xb0  <Block>
+    Initializer bytes  ro data  0x1fff3eec    0xb0  <for .data-1>
+  .text                ro code  0x1fff3f9c    0xac  start.o [1]
+  .text                ro code  0x1fff4048    0x38  wdog.o [1]
+  .text                ro code  0x1fff4080    0x2c  data_init3.o [5]
+  .iar.init_table      const    0x1fff40ac    0x10  - Linker created -
+  .text                ro code  0x1fff40bc    0x16  cmain.o [5]
+  .text                ro code  0x1fff40d2     0x4  low_level_init.o [3]
+  .text                ro code  0x1fff40d6     0x4  exit.o [3]
+  .text                ro code  0x1fff40dc     0xa  cexit.o [5]
+  .text                ro code  0x1fff40e8    0x14  exit.o [6]
+  .rodata              const    0x1fff40fc     0xc  main.o [1]
+  .rodata              const    0x1fff4108     0xc  main.o [1]
+  .rodata              const    0x1fff4114     0xc  main.o [1]
+  .rodata              const    0x1fff4120     0xc  main.o [1]
+  .rodata              const    0x1fff412c     0xc  main.o [1]
+  .rodata              const    0x1fff4138     0xc  main.o [1]
+  .rodata              const    0x1fff4144     0xc  main.o [1]
+  .rodata              const    0x1fff4150     0xc  main.o [1]
+  .rodata              const    0x1fff415c     0xc  main.o [1]
+  .rodata              const    0x1fff4168     0xc  main.o [1]
+  .rodata              const    0x1fff4174     0xc  main.o [1]
+  .rodata              const    0x1fff4180     0xc  main.o [1]
+  .text                ro code  0x1fff418c     0xc  cstartup_M.o [5]
+  .rodata              const    0x1fff4198     0x8  main.o [1]
+  .rodata              const    0x1fff41a0     0x8  main.o [1]
+  .rodata              const    0x1fff41a8     0x8  main.o [1]
+  .rodata              const    0x1fff41b0     0x8  main.o [1]
+  .rodata              const    0x1fff41b8     0x8  main.o [1]
+  .rodata              const    0x1fff41c0     0x8  main.o [1]
+  .rodata              const    0x1fff41c8     0x8  main.o [1]
+  .rodata              const    0x1fff41d0     0x0  bwt_init3c.o [5]
+                              - 0x1fff41d0  0x3d84
+
+"P2", part 1 of 2:                            0xb0
+  .data                         0x1fff41d0    0xb0  <Block>
+    .data-1                     0x1fff41d0    0xb0  <Init block>
+      .data            inited   0x1fff41d0     0x4  main.o [1]
+      .data            inited   0x1fff41d4    0x84  main.o [1]
+      .data            inited   0x1fff4258     0x4  main.o [1]
+      .data            inited   0x1fff425c     0x4  main.o [1]
+      .data            inited   0x1fff4260     0x4  main.o [1]
+      .data            inited   0x1fff4264     0x4  main.o [1]
+      .data            inited   0x1fff4268     0x2  main.o [1]
+      .data            inited   0x1fff426a     0x2  main.o [1]
+      .data            inited   0x1fff426c     0x2  main.o [1]
+      .data            inited   0x1fff426e     0x1  main.o [1]
+      .data            inited   0x1fff426f     0x1  main.o [1]
+      .data            inited   0x1fff4270     0x1  main.o [1]
+      .data            inited   0x1fff4272     0x2  main.o [1]
+      .data            inited   0x1fff4274     0x2  main.o [1]
+      .data            inited   0x1fff4276     0x2  main.o [1]
+      .data            inited   0x1fff4278     0x2  main.o [1]
+      .data            inited   0x1fff427a     0x2  main.o [1]
+      .data            inited   0x1fff427c     0x2  main.o [1]
+      .data            inited   0x1fff427e     0x2  main.o [1]
+                              - 0x1fff4280    0xb0
+
+"P2", part 2 of 2:                          0x2ac4
+  .bss                          0x1fff4280  0x2ac4  <Block>
+    .bss               zero     0x1fff4280  0x28e4  main.o [1]
+    .bss               zero     0x1fff6b64    0x84  main.o [1]
+    .bss               zero     0x1fff6be8    0x84  main.o [1]
+    .bss               zero     0x1fff6c6c    0x84  main.o [1]
+    .bss               zero     0x1fff6cf0     0x4  main.o [1]
+    .bss               zero     0x1fff6cf4     0x4  main.o [1]
+    .bss               zero     0x1fff6cf8     0x4  main.o [1]
+    .bss               zero     0x1fff6cfc     0x2  main.o [1]
+    .bss               zero     0x1fff6cfe     0x2  main.o [1]
+    .bss               zero     0x1fff6d00     0x2  main.o [1]
+    .bss               zero     0x1fff6d02     0x2  main.o [1]
+    .bss               zero     0x1fff6d04     0x2  main.o [1]
+    .bss               zero     0x1fff6d06     0x2  main.o [1]
+    .bss               zero     0x1fff6d08     0x2  main.o [1]
+    .bss               zero     0x1fff6d0a     0x2  main.o [1]
+    .bss               zero     0x1fff6d0c     0x2  main.o [1]
+    .bss               zero     0x1fff6d0e     0x2  main.o [1]
+    .bss               zero     0x1fff6d10     0x2  main.o [1]
+    .bss               zero     0x1fff6d12     0x2  main.o [1]
+    .bss               zero     0x1fff6d14     0x2  main.o [1]
+    .bss               zero     0x1fff6d16     0x2  main.o [1]
+    .bss               zero     0x1fff6d18     0x2  main.o [1]
+    .bss               zero     0x1fff6d1a     0x2  main.o [1]
+    .bss               zero     0x1fff6d1c     0x2  main.o [1]
+    .bss               zero     0x1fff6d1e     0x2  main.o [1]
+    .bss               zero     0x1fff6d20     0x2  main.o [1]
+    .bss               zero     0x1fff6d22     0x1  main.o [1]
+    .bss               zero     0x1fff6d23     0x1  main.o [1]
+    .bss               zero     0x1fff6d24     0x1  main.o [1]
+    .bss               zero     0x1fff6d25     0x1  main.o [1]
+    .bss               zero     0x1fff6d26     0x1  main.o [1]
+    .bss               zero     0x1fff6d27     0x1  main.o [1]
+    .bss               zero     0x1fff6d28     0x1  main.o [1]
+    .bss               zero     0x1fff6d29     0x1  main.o [1]
+    .bss               zero     0x1fff6d2a     0x1  main.o [1]
+    .bss               zero     0x1fff6d2b     0x1  main.o [1]
+    .bss               zero     0x1fff6d2c     0x1  main.o [1]
+    .bss               zero     0x1fff6d2d     0x1  main.o [1]
+    .bss               zero     0x1fff6d2e     0x1  main.o [1]
+    .bss               zero     0x1fff6d2f     0x1  main.o [1]
+    .bss               zero     0x1fff6d30     0x1  main.o [1]
+    .bss               zero     0x1fff6d31     0x1  main.o [1]
+    .bss               zero     0x1fff6d32     0x1  main.o [1]
+    .bss               zero     0x1fff6d33     0x1  main.o [1]
+    .bss               zero     0x1fff6d34     0x1  main.o [1]
+    .bss               zero     0x1fff6d35     0x1  main.o [1]
+    .bss               zero     0x1fff6d36     0x1  main.o [1]
+    .bss               zero     0x1fff6d37     0x1  main.o [1]
+    .bss               zero     0x1fff6d38     0x1  main.o [1]
+    .bss               zero     0x1fff6d39     0x1  main.o [1]
+    .bss               zero     0x1fff6d3a     0x1  main.o [1]
+    .bss               zero     0x1fff6d3b     0x1  main.o [1]
+    .bss               zero     0x1fff6d3c     0x1  main.o [1]
+    .bss               zero     0x1fff6d3d     0x1  main.o [1]
+    .bss               zero     0x1fff6d3e     0x1  main.o [1]
+    .bss               zero     0x1fff6d3f     0x1  main.o [1]
+    .bss               zero     0x1fff6d40     0x1  main.o [1]
+                              - 0x1fff6d44  0x2ac4
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x2ac1:
+          0x1fff4280  0x2ac1
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+C:\Users\Administrator\Desktop\起飞12\bin\Ram\Obj: [1]
+    LCDDriver.o         1 600      552
+    common.o              180
+    crt0.o                 60
+    main.o             11 200      376   11 120
+    start.o               172
+    vectors.o               2    1 040
+    wdog.o                 56
+    -------------------------------------------
+    Total:             13 270    1 968   11 120
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+m7M_tl.a: [4]
+    DblDiv.o              582
+    DblToI32.o             76
+    FltAdd.o              116
+    FltCmpGe.o             36
+    FltCmpLe.o             36
+    FltMul.o              216
+    FltSub.o              230
+    FltToS32.o             68
+    I32ToDbl.o             28
+    I32ToFlt.o             50
+    -------------------------------------------
+    Total:              1 438
+
+rt7M_tl.a: [5]
+    bwt_init3c.o
+    cexit.o                10
+    cmain.o                22
+    cstartup_M.o           12
+    data_init3.o           44
+    zero_init3.o           34
+    -------------------------------------------
+    Total:                122
+
+shb_l.a: [6]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    6                 1
+    Linker created                  16
+-----------------------------------------------
+    Grand Total:       14 864    1 984   11 121
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address    Size  Type      Object
+-----                     -------    ----  ----      ------
+.bss$$Base             0x1fff4280           --   Gb  - Linker created -
+.bss$$Limit            0x1fff6d44           --   Gb  - Linker created -
+.data$$Base            0x1fff41d0           --   Gb  - Linker created -
+.data$$Limit           0x1fff4280           --   Gb  - Linker created -
+.data_init$$Base       0x1fff3eec           --   Gb  - Linker created -
+.data_init$$Limit      0x1fff3f9c           --   Gb  - Linker created -
+?main                  0x1fff40bd          Code  Gb  cmain.o [5]
+CodeRelocate$$Base     0x00000000           --   Gb  - Linker created -
+CodeRelocate$$Limit    0x00000000           --   Gb  - Linker created -
+CodeRelocateRam$$Base  0x00000000           --   Gb  - Linker created -
+Deal_BlackEdge         0x1fff173d   0x33a  Code  Gb  main.o [1]
+Delay_MS               0x1fff20e5     0xa  Code  Gb  main.o [1]
+EXIT_Init              0x1fff0581    0x4c  Code  Gb  main.o [1]
+F6x8                   0x1fff3cc4   0x228  Data  Gb  LCDDriver.o [1]
+ImageReady             0x1fff6d23     0x1  Data  Gb  main.o [1]
+Initial                0x1fff044d    0x72  Code  Gb  main.o [1]
+Keyscan                0x1fff2575   0x230  Code  Gb  main.o [1]
+LCD_CLS                0x1fff3297    0x38  Code  Gb  LCDDriver.o [1]
+LCD_CLS_ROW            0x1fff32cf    0x3a  Code  Gb  LCDDriver.o [1]
+LCD_DLY_ms             0x1fff3309    0x1a  Code  Gb  LCDDriver.o [1]
+LCD_Fill               0x1fff325b    0x3c  Code  Gb  LCDDriver.o [1]
+LCD_IO_Init            0x1fff300d   0x126  Code  Gb  LCDDriver.o [1]
+LCD_Init               0x1fff3323    0xba  Code  Gb  LCDDriver.o [1]
+LCD_P6x8Cha            0x1fff33dd    0x3a  Code  Gb  LCDDriver.o [1]
+LCD_P6x8Num            0x1fff3491   0x174  Code  Gb  LCDDriver.o [1]
+LCD_P6x8Str            0x1fff3417    0x7a  Code  Gb  LCDDriver.o [1]
+LCD_Set_Pos            0x1fff322f    0x2c  Code  Gb  LCDDriver.o [1]
+LCD_WrCmd              0x1fff31b5    0x7a  Code  Gb  LCDDriver.o [1]
+LCD_WrDat              0x1fff3135    0x7e  Code  Gb  LCDDriver.o [1]
+LCD_change_value       0x1fff280d   0x364  Code  Gb  main.o [1]
+LPTMR_Init             0x1fff04bf    0xc2  Code  Gb  main.o [1]
+LineCount              0x1fff6d26     0x1  Data  Gb  main.o [1]
+OT                     0x1fff4258     0x4  Data  Gb  main.o [1]
+OddEvenStatus          0x1fff6d22     0x1  Data  Gb  main.o [1]
+PORT_Init              0x1fff2b95    0xca  Code  Gb  main.o [1]
+PTC_isr                0x1fff2db9   0x162  Code  Gb  main.o [1]
+Region$$Table$$Base    0x1fff40ac           --   Gb  - Linker created -
+Region$$Table$$Limit   0x1fff40bc           --   Gb  - Linker created -
+SCI0_send_mesage       0x1fff1aa9   0x1be  Code  Gb  main.o [1]
+Search_BlackEdge       0x1fff0d31   0x9e2  Code  Gb  main.o [1]
+Search_WhiteBase       0x1fff093b   0x30c  Code  Gb  main.o [1]
+Servor_Control         0x1fff1d8d   0x302  Code  Gb  main.o [1]
+UART0_Init             0x1fff05cd    0xb8  Code  Gb  main.o [1]
+VideoImage1            0x1fff4280  0x28e4  Data  Gb  main.o [1]
+VideoImageLine         0x1fff6d25     0x1  Data  Gb  main.o [1]
+Videoclo_Flag          0x1fff6d24     0x1  Data  Gb  main.o [1]
+__BOOT_STACK_ADDRESS {Abs}
+                       0x2000fff8           --   Gb  command line/config [2]
+__VECTOR_RAM {Abs}     0x1fff0000           --   Gb  command line/config [2]
+__VECTOR_TABLE {Abs}   0x1fff0000           --   Gb  command line/config [2]
+__aeabi_cfcmple        0x1fff3a05          Code  Gb  FltCmpLe.o [4]
+__aeabi_cfrcmple       0x1fff3b55          Code  Gb  FltCmpGe.o [4]
+__aeabi_d2iz           0x1fff39b9          Code  Gb  DblToI32.o [4]
+__aeabi_ddiv           0x1fff3771          Code  Gb  DblDiv.o [4]
+__aeabi_f2iz           0x1fff3a29          Code  Gb  FltToS32.o [4]
+__aeabi_fmul           0x1fff3b79          Code  Gb  FltMul.o [4]
+__aeabi_fsub           0x1fff3a6d          Code  Gb  FltSub.o [4]
+__aeabi_i2f            0x1fff364d          Code  Gb  I32ToFlt.o [4]
+__aeabi_ui2d           0x1fff3755          Code  Gb  I32ToDbl.o [4]
+__aeabi_ui2f           0x1fff3661          Code  Gb  I32ToFlt.o [4]
+__cmain                0x1fff40bd          Code  Gb  cmain.o [5]
+__exit                 0x1fff40e9    0x14  Code  Gb  exit.o [6]
+__iar_SB               0x1fff41d0          Data  Gb  bwt_init3c.o [5]
+__iar_d2uiz            0x1fff39e5          Code  Gb  DblToI32.o [4]
+__iar_data_init3       0x1fff4081    0x2c  Code  Gb  data_init3.o [5]
+__iar_fadd             0x1fff3c51          Code  Gb  FltAdd.o [4]
+__iar_fsub             0x1fff3a7d          Code  Gb  FltSub.o [4]
+__iar_fsubStart        0x1fff3a8d          Code  Gb  FltSub.o [4]
+__iar_program_start    0x1fff418d          Code  Gb  cstartup_M.o [5]
+__iar_ui2d             0x1fff3759          Code  Gb  I32ToDbl.o [4]
+__iar_ui2f             0x1fff3665          Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3       0x1fff367f    0x22  Code  Gb  zero_init3.o [5]
+__low_level_init       0x1fff40d3     0x4  Code  Gb  low_level_init.o [3]
+__startup              0x1fff0411          Code  Gb  crt0.o [1]
+__vector_table         0x1fff0000   0x410  Data  Gb  vectors.o [1]
+_call_main             0x1fff40c9          Code  Gb  cmain.o [5]
+_exit                  0x1fff40dd          Code  Gb  cexit.o [5]
+_main                  0x1fff40cf          Code  Gb  cmain.o [5]
+add_NUM                0x1fff6d3a     0x1  Data  Gb  main.o [1]
+add_page               0x1fff6d36     0x1  Data  Gb  main.o [1]
+angle                  0x1fff6d1a     0x2  Data  Gb  main.o [1]
+back_weight            0x1fff4270     0x1  Data  Gb  main.o [1]
+bottom_whitebase       0x1fff6cf0     0x4  Data  Gb  main.o [1]
+bow_d                  0x1fff427e     0x2  Data  Gb  main.o [1]
+bow_p                  0x1fff427c     0x2  Data  Gb  main.o [1]
+center_white           0x1fff6c6c    0x84  Data  Gb  main.o [1]
+come_bow_d             0x1fff427a     0x2  Data  Gb  main.o [1]
+come_bow_p             0x1fff4278     0x2  Data  Gb  main.o [1]
+common_startup         0x1fff3fad    0x74  Code  Gb  start.o [1]
+cross_flag             0x1fff6d32     0x1  Data  Gb  main.o [1]
+current_deal_line      0x1fff6d2d     0x1  Data  Gb  main.o [1]
+default_isr            0x1fff39b7     0x2  Code  Gb  vectors.o [1]
+down_line              0x1fff6d39     0x1  Data  Gb  main.o [1]
+enable_irq             0x1fff36a7    0x90  Code  Gb  common.o [1]
+error_server           0x1fff6d12     0x2  Data  Gb  main.o [1]
+error_servor_d         0x1fff6d1e     0x2  Data  Gb  main.o [1]
+error_servor_p         0x1fff6d1c     0x2  Data  Gb  main.o [1]
+exit                   0x1fff40d7     0x4  Code  Gb  exit.o [3]
+f_abs                  0x1fff0921     0xa  Code  Gb  main.o [1]
+f_abs16                0x1fff092b    0x10  Code  Gb  main.o [1]
+find_whitebase_flag    0x1fff6d2e     0x1  Data  Gb  main.o [1]
+font_weight            0x1fff426e     0x1  Data  Gb  main.o [1]
+hw_FTM_init            0x1fff0685   0x19c  Code  Gb  main.o [1]
+key_down               0x1fff2479    0xba  Code  Gb  main.o [1]
+lcd_line_num           0x1fff6d3f     0x1  Data  Gb  main.o [1]
+lcd_page_num           0x1fff6d3e     0x1  Data  Gb  main.o [1]
+left_black             0x1fff6b64    0x84  Data  Gb  main.o [1]
+left_lost_end_line     0x1fff6d28     0x1  Data  Gb  main.o [1]
+left_lost_flag         0x1fff6d29     0x1  Data  Gb  main.o [1]
+left_lost_start_line   0x1fff6d27     0x1  Data  Gb  main.o [1]
+left_top_whiteline     0x1fff4260     0x4  Data  Gb  main.o [1]
+main                   0x1fff2c81    0x8a  Code  Gb  main.o [1]
+max_speed              0x1fff426a     0x2  Data  Gb  main.o [1]
+mid_angle              0x1fff426c     0x2  Data  Gb  main.o [1]
+middle_weight          0x1fff426f     0x1  Data  Gb  main.o [1]
+min_speed              0x1fff6d0e     0x2  Data  Gb  main.o [1]
+pllinit180M            0x1fff0821   0x100  Code  Gb  main.o [1]
+pre_show               0x1fff20ef   0x23a  Code  Gb  main.o [1]
+re_error_server        0x1fff6d14     0x2  Data  Gb  main.o [1]
+re_top_error           0x1fff6d16     0x2  Data  Gb  main.o [1]
+re_top_whiteline       0x1fff6d35     0x1  Data  Gb  main.o [1]
+redraw                 0x1fff2329   0x14c  Code  Gb  main.o [1]
+redraw_control         0x1fff6d3c     0x1  Data  Gb  main.o [1]
+refer_road_width       0x1fff41d4    0x84  Data  Gb  main.o [1]
+right_black            0x1fff6be8    0x84  Data  Gb  main.o [1]
+right_lost_end_line    0x1fff6d2b     0x1  Data  Gb  main.o [1]
+right_lost_flag        0x1fff6d2c     0x1  Data  Gb  main.o [1]
+right_lost_start_line  0x1fff6d2a     0x1  Data  Gb  main.o [1]
+right_top_whiteline    0x1fff4264     0x4  Data  Gb  main.o [1]
+scan_boma              0x1fff208f    0x4e  Code  Gb  main.o [1]
+scan_control           0x1fff6d3d     0x1  Data  Gb  main.o [1]
+se_scope               0x1fff41d0     0x4  Data  Gb  main.o [1]
+send_mes               0x1fff6d33     0x1  Data  Gb  main.o [1]
+ser_ref_d              0x1fff6d20     0x2  Data  Gb  main.o [1]
+ser_ref_p              0x1fff4272     0x2  Data  Gb  main.o [1]
+speed                  0x1fff6d0c     0x2  Data  Gb  main.o [1]
+speed_control          0x1fff1c67   0x126  Code  Gb  main.o [1]
+speed_d                0x1fff6d08     0x2  Data  Gb  main.o [1]
+speed_ed_p             0x1fff6d0a     0x2  Data  Gb  main.o [1]
+speed_error            0x1fff6d02     0x2  Data  Gb  main.o [1]
+speed_except           0x1fff6d10     0x2  Data  Gb  main.o [1]
+speed_feedback         0x1fff6cfc     0x2  Data  Gb  main.o [1]
+speed_i                0x1fff6d06     0x2  Data  Gb  main.o [1]
+speed_i_error          0x1fff6d00     0x2  Data  Gb  main.o [1]
+speed_p                0x1fff4268     0x2  Data  Gb  main.o [1]
+speed_re_error         0x1fff6cfe     0x2  Data  Gb  main.o [1]
+speed_set              0x1fff6d04     0x2  Data  Gb  main.o [1]
+start                  0x1fff3f9d    0x10  Code  Gb  start.o [1]
+stopflag               0x1fff6d34     0x1  Data  Gb  main.o [1]
+straight_d             0x1fff4276     0x2  Data  Gb  main.o [1]
+straight_p             0x1fff4274     0x2  Data  Gb  main.o [1]
+sub_NUM                0x1fff6d3b     0x1  Data  Gb  main.o [1]
+sub_page               0x1fff6d37     0x1  Data  Gb  main.o [1]
+top_error              0x1fff6d18     0x2  Data  Gb  main.o [1]
+top_white_refer        0x1fff6cf8     0x4  Data  Gb  main.o [1]
+top_whiteline          0x1fff425c     0x4  Data  Gb  main.o [1]
+uart0_isr              0x1fff2d1d    0x6a  Code  Gb  main.o [1]
+up_line                0x1fff6d38     0x1  Data  Gb  main.o [1]
+wdog_disable           0x1fff4049    0x16  Code  Gb  wdog.o [1]
+wdog_unlock            0x1fff4061    0x16  Code  Gb  wdog.o [1]
+white_refer            0x1fff6cf4     0x4  Data  Gb  main.o [1]
+whitebase_line_cnt     0x1fff6d31     0x1  Data  Gb  main.o [1]
+whitepoint_end         0x1fff6d30     0x1  Data  Gb  main.o [1]
+whitepoint_start       0x1fff6d2f     0x1  Data  Gb  main.o [1]
+write_vtor             0x1fff36a1     0x6  Code  Gb  common.o [1]
+
+
+[1] = C:\Users\Administrator\Desktop\起飞12\bin\Ram\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  14 864 bytes of readonly  code memory
+   1 984 bytes of readonly  data memory
+  11 121 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

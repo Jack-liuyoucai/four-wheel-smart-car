@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1129123230</fileChecksum>
+  <configuration>
+    <name>FLASH</name>
+    <outputs>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\uart.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\isr.c</file>
+      <file>$PROJ_DIR$\src\Project_Settings\Link\Pflash.icf</file>
+      <file>$PROJ_DIR$\src\Sources\H\isr.h</file>
+      <file>$PROJ_DIR$\src\Project_Settings\Link\Ram.icf</file>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\light.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\gpio.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\wdog.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Frame_C\common.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Frame_C\sysinit.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Frame_C\vectors.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\LCDDriver.c</file>
+      <file>$PROJ_DIR$\src\Sources\H\LCDDriver.h</file>
+      <file>$PROJ_DIR$\src\Sources\C\main.c</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\MK60N512VMD100.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\includes.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\gpio.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\light.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\uart.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\wdog.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\common.h</file>
+      <file>$PROJ_DIR$\src\Project_Settings\Startup_Code\crt0.s</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\sysinit.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\vectors.h</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\src\Project_Settings\Startup_Code\start.c</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\uart.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\bin\Flash\List\LQ_K60_test_pll.map</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\LQ_K60_test_pll.pbd</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\start.pbi</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\gpio.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\LCDDriver.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\bin\Flash\List\main.lst</file>
+      <file>$PROJ_DIR$\bin\Flash\List\LCDDriver.s</file>
+      <file>$PROJ_DIR$\bin\Flash\Exe\LQ_K60_test_pll.srec</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\vectors.pbi</file>
+      <file>$PROJ_DIR$\bin\Flash\List\LCDDriver.lst</file>
+      <file>$PROJ_DIR$\bin\Flash\List\vectors.s</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\bin\Flash\List\crt0.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\bin\Flash\List\vectors.lst</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\main.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\light.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\LCDDriver.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\crt0.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\start.o</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\bin\Flash\List\main.s</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\vectors.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\wdog.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\common.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\wdog.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\sysinit.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\isr.pbi</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\light.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\sysinit.pbi</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\common.o</file>
+      <file>$PROJ_DIR$\bin\Flash\Obj\isr.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\bin\Flash\Exe\LQ_K60_test_pll.out</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 73 29</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 20 14 60 33 68 61 55 45 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\isr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15 20 14 60 33 68 61 55 45 54 17 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\light.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 20 14 60 33 68 61 55 45 54 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 20 14 60 33 68 61 55 45 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\wdog.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 20 14 60 33 68 61 55 45 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Frame_C\common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 14 60 33 68 61 55 45 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Frame_C\sysinit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 20 14 60 33 68 61 55 45 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Frame_C\vectors.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 46 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23 20 14 60 33 68 61 35 55 45 54 3</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23 20 14 60 33 68 61 55 45 54 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\LCDDriver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 37 40 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 60 33 68 61 35 55 45 54 12 20</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 60 33 68 61 55 45 54 12 20</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 56 36 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14 60 33 68 61 35 55 45 54 15 20 17 16 72 63 50 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 60 33 68 61 55 45 54 15 20 17 16 72 63 50 12</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Project_Settings\Startup_Code\crt0.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 51 44</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Project_Settings\Startup_Code\start.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 14 60 33 68 61 55 45 54 19 22</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\bin\Flash\Obj\LQ_K60_test_pll.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 49 59 32 66 67 42 31 69 24 39 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\bin\Flash\Exe\LQ_K60_test_pll.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 2 34 70 51 28 71 48 47 52 65 27 57 58 53 26 64 43</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>RAM</name>
+    <outputs>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\uart.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\isr.c</file>
+      <file>$PROJ_DIR$\src\Sources\H\isr.h</file>
+      <file>$PROJ_DIR$\src\Project_Settings\Link\Ram.icf</file>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\light.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\gpio.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Component_C\wdog.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Frame_C\common.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Frame_C\sysinit.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\Frame_C\vectors.c</file>
+      <file>$PROJ_DIR$\src\Sources\C\LCDDriver.c</file>
+      <file>$PROJ_DIR$\src\Sources\H\LCDDriver.h</file>
+      <file>$PROJ_DIR$\src\Sources\C\main.c</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\MK60N512VMD100.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\includes.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\gpio.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\light.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\uart.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Component_H\wdog.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\common.h</file>
+      <file>$PROJ_DIR$\src\Project_Settings\Startup_Code\crt0.s</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\sysinit.h</file>
+      <file>$PROJ_DIR$\src\Sources\H\Frame_H\vectors.h</file>
+      <file>$PROJ_DIR$\src\Project_Settings\Startup_Code\start.c</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\wdog.o</file>
+      <file>$PROJ_DIR$\bin\Ram\List\crt0.lst</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\vectors.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\light.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\sysinit.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\List\main.lst</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\main.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\LQ_K60_test_pll.pbd</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\isr.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\LCDDriver.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Exe\LQ_K60_test_pll.out</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\start.o</file>
+      <file>$PROJ_DIR$\bin\Ram\List\vectors.s</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\crt0.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\isr.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\light.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\List\main.s</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\uart.o</file>
+      <file>$PROJ_DIR$\bin\Ram\List\LCDDriver.s</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\sysinit.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\common.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\LCDDriver.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\common.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\vectors.o</file>
+      <file>$PROJ_DIR$\bin\Ram\List\LCDDriver.lst</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\wdog.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Obj\start.pbi</file>
+      <file>$PROJ_DIR$\bin\Ram\Exe\LQ_K60_test_pll.srec</file>
+      <file>$PROJ_DIR$\bin\Ram\List\LQ_K60_test_pll.map</file>
+      <file>$PROJ_DIR$\bin\Ram\List\vectors.lst</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 68 47</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 19 13 32 25 35 33 31 28 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\isr.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 19 13 32 25 35 33 31 28 30 16 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\light.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 19 13 32 25 35 33 31 28 30 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15 19 13 32 25 35 33 31 28 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Component_C\wdog.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18 19 13 32 25 35 33 31 28 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Frame_C\common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 13 32 25 35 33 31 28 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Frame_C\sysinit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 19 13 32 25 35 33 31 28 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\Frame_C\vectors.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49 69 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 22 19 13 32 25 35 33 26 31 28 30 2</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22 19 13 32 25 35 33 31 28 30 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\LCDDriver.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 56 64 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13 32 25 35 33 26 31 28 30 11 19</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 32 25 35 33 31 28 30 11 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Sources\C\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53 41 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13 32 25 35 33 26 31 28 30 14 19 16 15 11</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 32 25 35 33 31 28 30 14 19 16 15 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Project_Settings\Startup_Code\crt0.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 50 37</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Project_Settings\Startup_Code\start.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 13 32 25 35 33 31 28 30 18 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\bin\Ram\Obj\LQ_K60_test_pll.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 61 62 54 45 52 42 66 40 59 38 65</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\bin\Ram\Exe\LQ_K60_test_pll.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 3 46 58 50 60 51 39 43 48 57 55 63 36 29 24 34 27</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>light/FLASH</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>259</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+    <TerminalIO/><Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>965</ColumnWidth1></Debug-Log><Disassembly><MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly></Static>
+    <Windows>
+      
+      
+    <Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24016-6506</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>light</ExpandedNode><ExpandedNode>light/Output</ExpandedNode><ExpandedNode>light/Project_Settings</ExpandedNode><ExpandedNode>light/Project_Settings/Startup_Code</ExpandedNode><ExpandedNode>light/Project_Settings/link</ExpandedNode><ExpandedNode>light/Sources</ExpandedNode><ExpandedNode>light/Sources/C</ExpandedNode><ExpandedNode>light/Sources/H</ExpandedNode><ExpandedNode>light/Sources/H/Component_H</ExpandedNode><ExpandedNode>light/Sources/H/Frame_H</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28783-6826</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-17506-10354</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\Sources\H\Component_H\light.h</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>606</SelStart><SelEnd>606</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\Sources\C\main.c</Filename><XPos>0</XPos><YPos>21</YPos><SelStart>499</SelStart><SelEnd>499</SelEnd></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-012e11c8><key>iaridepm.enu1</key></Toolbar-012e11c8></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes><Toolbar-04da0b70><key>debuggergui.enu1</key></Toolbar-04da0b70></Sizes></Row2></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>595</Bottom><Right>333</Right><x>-2</x><y>-2</y><xscreen>149</xscreen><yscreen>108</yscreen><sizeHorzCX>116406</sizeHorzCX><sizeHorzCY>150000</sizeHorzCY><sizeVertCX>261719</sizeVertCX><sizeVertCY>829167</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>80</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>82</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>113889</sizeHorzCY><sizeVertCX>116406</sizeVertCX><sizeVertCY>150000</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
